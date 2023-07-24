@@ -53,7 +53,7 @@ def get_weather_data():
 @app.route('/')
 def dashboard():
     weather_data = fetch_weather_data()
-    return render_template('dashboard.html', data=weather_data)
+    return render_template('dashboard.php', data=weather_data)
 
 if __name__ == '__main__':
     app.run(debug=True)
